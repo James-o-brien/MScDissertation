@@ -22,9 +22,11 @@ Roughly speaking, the first four files below (ODDpolys, Data_viz, Init, and OldO
 
 ## CLIMADA Python Files
 
-
+![plot](./IntensityMap.png)
 
 ## Data
+
+The Cyclone Harold data can be found in tc_harold_val_data.csv. Other relevant data can be found on the ODDRIN repository, as well as through citations in Section 2.2 of the dissertation.
 
 ## Comments
 Some of the code and functions can take several days or even weeks to run, depending on parameter choices. When this is the case, we have tried to explicitly warn the user and comment out very intense computations. The full ODDpolys and BD objects which are used in calculations are provided, to save the user time in initialising these. The ODDpixels object was too large to store here. I am happy to email this object as an RDS file upon request; my email address is james-obrien1@outlook.com.
