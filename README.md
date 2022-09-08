@@ -1,4 +1,4 @@
-# MScDissertation
+# MSc Dissertation
 This is a repository which contains some of the main files written during my MSc Dissertation, 'Benchmarking predictions of post-disaster human displacement'.
 
 ## ODDRIN R Files
@@ -6,7 +6,7 @@ Please note that some of the code presented here depends on the installation of 
 
 Roughly speaking, the first four files below (ODDpolys, Data_viz, Init, and OldOSM) are new, while the last two files (DispX_new and Model_changes) are new versions of previously created files which have been developed during this dissertation. Some of the new files contain functions which build off previous versions of functions, and we do our best to note whenever this is the case below. 
 
-![plot](./SanmaNew.png)
+![plot](./Sanma.jpeg)
 
 ##### ODDpolys.R
 
