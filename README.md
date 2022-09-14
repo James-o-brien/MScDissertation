@@ -22,7 +22,7 @@ Roughly speaking, the first four files below (ODDpolys, Data_viz, Init, and OldO
 
 ## CLIMADA Python Files
 
-Similar to the above, to running this CLIMADA file will require the installation of both Python and CLIMADA's software, instructions for which [are available here.]
+Similar to the above, running this CLIMADA file will require the installation of both Python and CLIMADA's software, instructions for which [are available here.]
 
 ![plot](./IntensityMap.png)
 
