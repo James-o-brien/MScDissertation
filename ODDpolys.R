@@ -399,5 +399,7 @@ setMethod(f = "initialize", signature = "ODDpolys",
           
             }
 )
+
 ODDpixels <- readRDS(file = paste0(dir, "IIDIPUS_Input/ODDobjects_v4/TC20200404VUT_2208_agg_4"))
 ODDpolys <- new("ODDpolys", polys = polys, ODDpixels = ODDpixels, cleanData = cleanData)
+valDF <- ODDpolys@valDF
