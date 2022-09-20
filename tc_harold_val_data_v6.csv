@@ -1,0 +1,54 @@
+﻿hazard,event_name,source_date,wiki_ref,source_type,source,building_type,b_destroyed,b_damaged,mortality,injuries,displacement,missing,country,iso3,province,city,admin_1,admin_2,admin_3,admin_4,gmax,sdate,eventid,qualifierBD,qualifierMort,qualifierDisp,fdate,GDACS
+TC,Cyclone Harold,08/04/2020,36,,Damages Caused by TC Harold Still To Be Confirmed - Solomon Times Online,house,57,20,,,,,Solomon Islands,SLB,,,,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,36,,Damages Caused by TC Harold Still To Be Confirmed - Solomon Times Online,classroom,7,,,,,,Solomon Islands,SLB,,,,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,09/04/2020,60,News outlet,Cyclone Harold updates: Storm makes landfall on Vanuatu's Santo | RNZ News,,,,,,1000,,Vanuatu,VUT,Santo,,Sanma,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,06/04/2020,48,,https://www.bbc.com/news/world-asia-52179853,,,,27,,,,Solomon Islands,SLB,,,,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,07/04/2020,74,News outlet,"Cyclone Harold: Reports of destruction emerge, assessments begin | RNZ News",,,2897,,,,,Vanuatu,VUT,Sanma,Luganville,Sanma,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,N/A,,The Fiji Times » STC Harold: Navosai resident claim tornado damaged their homes,house,,9,,,,,Fiji,FJI,Naitasiri,,Central,Naitasiri,Nasinu,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,09/04/2020,79,News outlet,Close to 70 percent of Vanuatu's Luganville destroyed by Cyclone Harold | RNZ News,,,,2,,,,Vanuatu,VUT,Sanma,,Sanma,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,07/04/2020,82,Twitter,"(3) Sandra in Vanuatu on Twitter: ""#Vanuatu #CycloneHarold #TCHarold Reports trickling in of the cyclone’s destruction in multiple small communities throughout several islands. In this #PentecostIsland village of 231 people, all its 55 homes were damaged or destroyed. Thankfully no casualties. Photo Watas Celac https://t.co/Bv9wQ8hEkV"" / Twitter",,55,,,,,,Vanuatu,VUT,Penama,,Penama,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/04/2020,87,,PHT Sitrep 9_TC Harold_21042020.pdf,house,228,996,,,,,Fiji,FJI,,,Western,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/04/2020,87,,PHT Sitrep 9_TC Harold_21042020.pdf,house,2,5,,,,,Fiji,FJI,,,Northern,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/04/2020,87,,PHT Sitrep 9_TC Harold_21042020.pdf,house,102,460,,,,,Fiji,FJI,,,Central,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/04/2020,87,,PHT Sitrep 9_TC Harold_21042020.pdf,house,243,458,,,,,Fiji,FJI,,,Eastern,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/04/2020,87,Report,PHT Sitrep 9_TC Harold_21042020.pdf,,,3705,,,,,Vanuatu,VUT,Penama,,Penama,Pentecost,,,18538,,,,,,,
+TC,Cyclone Harold,21/04/2020,87,Report,PHT Sitrep 9_TC Harold_21042020.pdf,,,827,,,,,Vanuatu,VUT,Sanma,,Sanma,Malo Island,,,18538,,,,,,,
+TC,Cyclone Harold,21/04/2020,87,,PHT Sitrep 9_TC Harold_21042020.pdf,school,,10,,,,,Tonga,TON,,,,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/04/2020,87,,PHT Sitrep 9_TC Harold_21042020.pdf,,,,,,1310,,Fiji,FJI,,,,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/04/2020,87,,PHT Sitrep 9_TC Harold_21042020.pdf,tourist resort,,2,,,,,Tonga,TON,Tongatapu,,Tongatapu,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/05/2020,N/A,Report,Overview_of_Health_Facility_Assessment_1_-_25_May_2020.pdf (gov.vu),hospital,,28,,,,,Vanuatu,VUT,Sanma,,Sanma,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/05/2020,N/A,Report,Overview_of_Health_Facility_Assessment_1_-_25_May_2020.pdf (gov.vu),hospital,,18,,,,,Vanuatu,VUT,Penama,,Penama,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/05/2020,N/A,Report,Overview_of_Health_Facility_Assessment_1_-_25_May_2020.pdf (gov.vu),hospital,,4,,1,,,Vanuatu,VUT,Malampa,,Malampa,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/05/2020,N/A,Report,Overview_of_Health_Facility_Assessment_1_-_25_May_2020.pdf (gov.vu),hospital,,2,,,,,Vanuatu,VUT,Shefa,,Shefa,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/05/2020,N/A,Report,Vanuatu TC Harold Situation Report (gov.vu),,,,1,64,,,Vanuatu,VUT,Sanma,,Sanma,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/05/2020,N/A,Report,Vanuatu TC Harold Situation Report (gov.vu),,,,2,59,,,Vanuatu,VUT,Penama,,Penama,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/05/2020,N/A,Report,Vanuatu TC Harold Situation Report (gov.vu),,,,2,59,,,Vanuatu,VUT,Malampa,,Penama,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,21/04/2020,87,Report,PHT Sitrep 9_TC Harold_21042020.pdf,house,,4989,,,,,Vanuatu,VUT,Sanma,,Sanma,,,,18538,,,,,,,
+TC,Cyclone Harold,21/04/2020,87,Report,PHT Sitrep 9_TC Harold_21042020.pdf,house,,4957,,,,,Vanuatu,VUT,Malampa,,Malampa,,,,18538,,,,,,,
+TC,Cyclone Harold,21/04/2020,87,Report,PHT Sitrep 9_TC Harold_21042020.pdf,house,,2266,,,,,Vanuatu,VUT,Penama,,Penama,,,,18538,,,,,,,
+TC,Cyclone Harold,21/04/2020,87,Report,PHT Sitrep 9_TC Harold_21042020.pdf,house,,5135,,,,,Vanuatu,VUT,Shefa,,Shefa,,,,18538,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,94,,25 evacuation centers activated – FBC News,,,,,,2146,,Fiji,FJI,,,,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,09/04/2020,96,,Fiji: Tropical Cyclone Harold Humanitarian Snapshot (As of 9 April 2020) - Fiji | ReliefWeb,,,,,,6000,,Fiji,FJI,,,,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,116,,Qauia in Lami affected by rising flood waters (fijivillage.com),house,,100,,,,,Fiji,FJI,Rewa,,Central,Rewa,Lami,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,121,,The Fiji Times » STC Harold: Nine houses destroyed and several injured in Tailevu; Police team deployed,house,9,,,,,,Fiji,FJI,Tailevu,,Central,Tailevu,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,130,,Two injured in Vusuya (fijivillage.com),,,,,2,,,Fiji,FJI,Tailevu,,Central,Tailevu,Vusuya,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,131,,Tornadoes from TC Harold Affect Nakasi and Nausori (fijivillage.com),house,,7,,,,,Fiji,FJI,Tailevu,,Central,Tailevu,Vusuya,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,131,,Tornadoes from TC Harold Affect Nakasi and Nausori (fijivillage.com),house,,15,,,,,Fiji,FJI,Tailevu,,Central,Tailevu,Nausori,Waidamudamu,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,131,,Tornadoes from TC Harold Affect Nakasi and Nausori (fijivillage.com),,,,,2,,,Fiji,FJI,Tailevu,,Central,Tailevu,Nausori,Waidamudamu,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,131,,Tornadoes from TC Harold Affect Nakasi and Nausori (fijivillage.com),house,,7,,,,,Fiji,FJI,Tailevu,,Central,Tailevu,Vusuya,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,131,,Tornadoes from TC Harold Affect Nakasi and Nausori (fijivillage.com),school,,1,,,,,Fiji,FJI,Tailevu,,Central,Tailevu,Nasinu,Nakasi,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,132,,Bhawani Dayal School Block roof blown away while houses in Nakasi badly damaged Some people injured at Momi Feeder Rd in Nausori (fijivillage.com),house,,4,,,,,Fiji,FJI,Tailevu,,Central,Tailevu,Nasinu,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,132,,Bhawani Dayal School Block roof blown away while houses in Nakasi badly damaged Some people injured at Momi Feeder Rd in Nausori (fijivillage.com),,,,,,4,,Fiji,FJI,Tailevu,,Central,Tailevu,Nasinu,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,133,,The Fiji Times » STC Harold: Navosai resident claim tornado damaged their homes,house,,9,,,,,Fiji,FJI,Tailevu,,Central,Tailevu,Nasinu,Narere,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,135,,"Cyclone Harold batters Fiji, flattening homes and flooding towns | Coronavirus pandemic News | Al Jazeera",house,10,,,,,,Fiji,FJI,,,Central,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,09/04/2020,140,,"TC Harold left massive destruction in Naioti, Kadavu – FBC News",house,2,,,,,,Fiji,FJI,Kadavu,,Eastern,Kadavu,Yale,Naioti,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,10/04/2020,142,,"The Fiji Times » STC Harold: About 50 homes destroyed, damaged in Ono-i-Lau",house,50,,,,,,Fiji,FJI,Lau,,Eastern,Lau,Ono-i-Lau,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,144,,Category 5 TC Harold continues to move in the east-southeast direction and away from Fiji group (fijivillage.com),house,,20,,,,,Fiji,FJI,Kadavu,,Eastern,Kadavu,Bulia,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,144,,Category 5 TC Harold continues to move in the east-southeast direction and away from Fiji group (fijivillage.com),,,,,,1086,,Fiji,FJI,,,Western,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,144,,Category 5 TC Harold continues to move in the east-southeast direction and away from Fiji group (fijivillage.com),,,,,,559,,Fiji,FJI,,,Central,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,144,,Category 5 TC Harold continues to move in the east-southeast direction and away from Fiji group (fijivillage.com),,,,,,33,,Fiji,FJI,,,Northern,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/04/2020,144,,Category 5 TC Harold continues to move in the east-southeast direction and away from Fiji group (fijivillage.com),,,,,,90,,Fiji,FJI,,,Eastern,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,09/04/2020,145,,26 Fijians sustain injuries during TC Harold – FBC News,,,,,26,,,Fiji,FJI,,,,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,11/04/2020,146,,The Fiji Times » STC Harold: Fiji records first fatality,,,,1,,,,Fiji,FJI,Kadavu,,Eastern,Kadavu,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,10/04/2020,158,,‘Eua devastated after TC Harold - Tonga | ReliefWeb,,,,,,180,,Tonga,TON,Eau,,Eau,,,,,01/04/2020,,,,,11/04/2020,2.5
+TC,Cyclone Harold,08/05/2020,N/A,Report,ca8977en.pdf,,,,,,61458,,Vanuatu,VUT,Sanma,,Sanma,,,,18538,01/04/2020,,,,,11/04/2020,2.5
