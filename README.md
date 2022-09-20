@@ -10,6 +10,10 @@ Roughly speaking, the first four files below (ODDpolys, Data_viz, Init, and OldO
 
 ##### ODDpolys.R
 
+Key Functions:
+- 
+
+
 ##### Data_viz.R
 
 ##### Init.R
