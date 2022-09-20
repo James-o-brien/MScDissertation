@@ -17,8 +17,8 @@ Key Functions:
 - `extractIndices` - extracts the indices of the rows of the coordinates in the ODDpixels object that have points contained within the polygons that were extracted from getPolys.
 - `initialize ODDpolys` - fill the slots of ODDpolys with polyIndices (a list of vectors, one for each polygon, with each vector containing the indices of the ODDpixels object whose points lie within the polygon), sourceInfo (data frame made up of source date, source type, and the source itself), valDF (dataframe with the validation data, i.e. mortality, displacement, buildings damaged, buildings destroyed), polygons (the polygons extracted from OSM), bbox (the bounding box of the polygons), and data (the data slot of the polys Spatial Polygons Data Frame extracted from OSM using getPolys).
 - `inPoly`: function which was already built in ODDRIN which allows the extraction of point indices within a grid.
-- `ExtractOSMBuild` - function which was already built in ODDRIN which allows extraction of OSM buildings for a given bbox.
-- `ParAggnBuildings` - function which was already built in ODDRIN which allows the aggregation of points to pixels.
+- `ExtractOSMBuild` - function which was already built in ODDRIN which allows extraction of OSM buildings for a given bbox. Warning: this function may take several minutes to run, depending on the size of the bbox.
+- `ParAggnBuildings` - function which was already built in ODDRIN which allows the aggregation of points to pixels. Warning: this function will take minutes or hours depending on the size of the bbox.
 
 ##### Data_viz.R
 
@@ -38,7 +38,7 @@ Similar to the above, running this CLIMADA file will require the installation of
 
 ## Data
 
-The Cyclone Harold data can be found in tc_harold_val_data.csv. Other relevant data can be found on the ODDRIN repository, as well as through citations in Section 2.2 of the dissertation.
+The Cyclone Harold data can be found in tc_harold_val_data_v6.csv. Other relevant data can be found on the ODDRIN repository, as well as through citations in Section 2.2 of the dissertation.
 
 ## Comments
 Some of the code and functions can take several days or even weeks to run, depending on parameter choices. When this is the case, we have tried to explicitly warn the user and comment out very intense computations. The full ODDpolys and BD objects which are used in calculations are provided, to save the user time in initialising these. The ODDpixels object was too large to store here. I am happy to email this object as an RDS file upon request; my email address is james-obrien1@outlook.com.
