@@ -11,19 +11,16 @@ Roughly speaking, the first four files below (ODDpolys, Data_viz, Init, and OldO
 ##### ODDpolys.R
 
 Key Functions:
-- `convIso3Country` - function was already built in ODDRIN which converts a country's ISO3 code to the country name
-- `cleanValData` - filters to the inputted country iso3 code, removes NA columns, orders the rows such that highest admin levels are at the  bottom, formats the date columns, adds a column describing the polygon which will be used in getPolys to extract data from OSM
-- `getPolys` - extracts polygons from OSM given the validation data spreadsheet
+- `convIso3Country` - function was already built in ODDRIN which converts a country's ISO3 code to the country name.
+- `cleanValData` - filters to the inputted country iso3 code, removes NA columns, orders the rows such that highest admin levels are at the  bottom, formats the date columns, adds a column describing the polygon which will be used in getPolys to extract data from OSM.
+- `getPolys` - extracts polygons from OSM given the validation data spreadsheet.
 - `extractIndices` - extracts the indices of the rows of the coordinates in the ODDpixels object that have points contained within the polygons that were extracted from getPolys.
-- `initialize ODDpolys` - fill the slots of ODDpolys with polyIndices (a list of vectors, one for each polygon, with each vector containing the indices of the ODDpixels object whose points lie within the polygon), sourceInfo (data frame made up of source date, source type, and the source itself), valDF (dataframe with the validation data, i.e. mortality, displacement, buildings damaged, buildings destroyed)
-- `inPoly`: function which was already built in ODDRIN which allows the extraction of point indices within a grid
-- `ExtractOSMBuild` - function which was already built in ODDRIN which allows extraction of OSM buildings for a given bbox
-- `ParAggnBuildings` - function which was already built in ODDRIN which allows the aggregation of points to pixels
-
+- `initialize ODDpolys` - fill the slots of ODDpolys with polyIndices (a list of vectors, one for each polygon, with each vector containing the indices of the ODDpixels object whose points lie within the polygon), sourceInfo (data frame made up of source date, source type, and the source itself), valDF (dataframe with the validation data, i.e. mortality, displacement, buildings damaged, buildings destroyed), polygons (the polygons extracted from OSM), bbox (the bounding box of the polygons), and data (the data slot of the polys Spatial Polygons Data Frame extracted from OSM using getPolys).
+- `inPoly`: function which was already built in ODDRIN which allows the extraction of point indices within a grid.
+- `ExtractOSMBuild` - function which was already built in ODDRIN which allows extraction of OSM buildings for a given bbox.
+- `ParAggnBuildings` - function which was already built in ODDRIN which allows the aggregation of points to pixels.
 
 ##### Data_viz.R
-
-##### Init.R
 
 ##### OldOSM.R
 
