@@ -23,8 +23,8 @@ library(sf)
 library(raster)
 library(devtools)
 library(parallel)
-#library(doParallel)
-#library(foreach)
+library(doParallel)
+library(foreach)
 install_github('nathanvan/parallelsugar')
 library(parallelsugar)
 
@@ -93,7 +93,7 @@ cleanValData <- function(ValData, ISO3){
 
 cleanData <- cleanValData(ValData = ValData, ISO3 = "VUT")
 
-getPolys <- function(cleanData, adminLevel = NULL){
+getPolys <- function(cleanData, adminLevel = 0){
   
   ### Input: 
   # - cleanData: the filtered, ordered, formatted validation data spreadsheet output from cleanValData, with a column added for the polygon
@@ -145,14 +145,26 @@ getPolys <- function(cleanData, adminLevel = NULL){
         {warning("Some sources for building damage (destroyed) figures are similar to each other - check for double counting")}}
     
   # Extract polygons at the lowest level of granularity possible
-    if(is.null(adminLevel) & !(is.na(cleanData$admin_4[i]))){
+
+    if(adminLevel == 0 & !(is.na(cleanData$admin_4[i]))){
       polysList[[i]] <- getbb(cleanData$polygon[i], format_out = "sf_polygon")}
-    else if(is.null(adminLevel) & !(is.na(cleanData$admin_3[i]))){
+    else if(adminLevel == 0 & !(is.na(cleanData$admin_3[i]))){
       polysList[[i]] <- getbb(cleanData$polygon[i], format_out = "sf_polygon")}
-    else if(is.null(adminLevel) & !(is.na(cleanData$admin_2[i]))){
+    else if(adminLevel == 0 & !(is.na(cleanData$admin_2[i]))){
       polysList[[i]] <- getbb(cleanData$polygon[i], format_out = "sf_polygon")}
-    else {
+    else if(adminLevel == 0 & !(is.na(cleanData$admin_1[i]))){
       polysList[[i]] <- getbb(cleanData$polygon[i], format_out = "sf_polygon")}
+    
+
+    if((adminLevel == 4) & !(is.na(cleanData$admin_4[i]))){
+      polysList[[i]] <- getbb(cleanData$polygon[i], format_out = "sf_polygon")}
+    else if(adminLevel == 3 & !(is.na(cleanData$admin_3[i]))){
+      polysList[[i]] <- getbb(cleanData$polygon[i], format_out = "sf_polygon")}
+    else if(adminLevel == 2 & !(is.na(cleanData$admin_2[i]))){
+      polysList[[i]] <- getbb(cleanData$polygon[i], format_out = "sf_polygon")}
+    else if(adminLevel == 1 & !(is.na(cleanData$admin_1[i]))){
+      polysList[[i]] <- getbb(cleanData$polygon[i], format_out = "sf_polygon")}
+    
   }
   
   bindPolys <- dplyr::bind_rows(polysList)
@@ -166,7 +178,7 @@ getPolys <- function(cleanData, adminLevel = NULL){
 
 }
 
-polys <- getPolys(cleanData = cleanData, adminLevel = NULL) 
+polys <- getPolys(cleanData = cleanData, adminLevel = 0) 
 
 inPoly<-function(poly, pop, iii = 1, sumFn = "sum"){
   
@@ -214,8 +226,6 @@ setClass("ODD",
                    predictDisp="data.frame",
                    modifier="list"),
          contains = "SpatialPixelsDataFrame")
-
-#ODDpixels_2208 <- readRDS(paste0(dir, "IIDIPUS_Input/ODDobjects3/ODD_TC20200404VUT_7325"))
 
 ODDpixels <- readRDS(paste0(dir,'IIDIPUS_Input/ODDobjects3/ODD_TC20200404VUT_7325'))
 
@@ -344,10 +354,9 @@ extractIndices <- function(polys, ODDobject){
   }
   return(inPolyInds)
 }
-
+  
 setClass("ODDpolys", 
          slots = c(pixelsIndices = "list",
-#                   pointsIndices = "list",
                    sourceInfo = "data.frame",
                    valDF = "data.frame"
          ),
@@ -366,7 +375,6 @@ setMethod(f = "initialize", signature = "ODDpolys",
             
             if(is.null(ODDpixels)) return(.Object)
             .Object@pixelsIndices <- extractIndices(polys, ODDpixels)
-#            .Object@pointsIndices <- extractIndices(polys, ODDpoints)
             .Object@sourceInfo <- as.data.frame(cleanData[c("source_date", "source_type", "source")])
             
             valDF <- as.data.frame(cleanData %>%
@@ -393,16 +401,3 @@ setMethod(f = "initialize", signature = "ODDpolys",
 )
 ODDpixels <- readRDS(file = paste0(dir, "IIDIPUS_Input/ODDobjects_v4/TC20200404VUT_2208_agg_4"))
 ODDpolys <- new("ODDpolys", polys = polys, ODDpixels = ODDpixels, cleanData = cleanData)
-
-###################################### ------------------------------- ideas
-# ideas:
-# 1. allow for country names, not just admin level names
-# 2. change getPolys around to allow the user to choose which admin levels they want to go with (could make the default the most granular),
-# would be pretty easy to make this an input to the function, have done the hard part with how it is at the moment.
-# 3. use lapply instead of the for loop - might be quicker - test with microbenchmark or simply just system.time()
-# 4. if expanding to more than Vanuatu, will have to make sure each row in the spreadsheet doesn't have more than one non-zero entry in one of the
-# columns: mortality, b_damaged, b_destroyed, displacement
-# 5. Put descriptions for last two functions in (for what the input will be etc.)
-# 6. change merge in DispX_new to be a quicker left join or something in dplyr
-# 7. run everything through from start to finish and make sure it works (you've loaded all the necessary libraries etc.)
-# 8. Allow the user to choose whether they aggregate the final results of DispX to admin 1 or nationally.
