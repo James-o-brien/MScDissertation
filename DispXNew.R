@@ -12,6 +12,9 @@ library(foreach)
 install_github('nathanvan/parallelsugar')
 library(parallelsugar)
 
+dir<-directory<-"C:/Users/james/OneDrive/Documents/Oxford/Dissertation/Code/ODDRIN/"
+setwd(directory)
+
 ExtractCentering<-function(dir, haz="TC",saver=T, input_folder='IIDIPUS_Input/'){
   
   if(saver & file.exists(paste0(dir, input_folder, "centerings"))) 
