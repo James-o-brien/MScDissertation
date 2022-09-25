@@ -37,8 +37,8 @@ ExtractCentering<-function(dir, haz="TC",saver=T, input_folder='IIDIPUS_Input/')
   return(center)
 }
 
-source('RCode/Functions.R')
 source('RCode/Model.R')
+source('RCode/Functions.R')
 
 Omega <- list(Lambda1 = list(nu=0.2,omega=0.7),
               Lambda2 = list(nu= 1.3, omega=0.9),
