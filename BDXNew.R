@@ -155,6 +155,10 @@ setMethod("BDX_new", "BD", function(BD,Omega,Model,Method=list(Np=20,cores=1),LL
   
 })
 
-BD <- readRDS(paste0(dir, "IIDIPUS_Input/BDobjects_v5/TC20200404VUT_BD"))
-BDX_results <- BDX_new(BD, Omega, Model, Method = AlgoParams, LL = F)
-tab <- table(BDX_results@data$grading, BDX_results@data$ClassPredicted)
+#
+### Uncomment to run an example below: requires downloading the data and storing in the appropriately named folders
+#
+
+#BD <- readRDS(paste0(dir, "IIDIPUS_Input/BDobjects_v5/TC20200404VUT_BD"))
+#BDX_results <- BDX_new(BD, Omega, Model, Method = AlgoParams, LL = F)
+#tab <- table(BDX_results@data$grading, BDX_results@data$ClassPredicted)
