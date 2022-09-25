@@ -313,7 +313,7 @@ setMethod("DispX_new", "ODD", function(ODDpixels, valDF, Omega, center, BD_param
 })
 
 #
-### Uncomment to run an example below
+### Uncomment to run an example below: requires downloading the data and storing in the appropriately named folders
 #
 
 #ODDpixels <- readRDS(paste0(dir,"IIDIPUS_Input/ODDobjects_v4/TC20200404VUT_2208_agg_4"))
