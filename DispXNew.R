@@ -312,11 +312,15 @@ setMethod("DispX_new", "ODD", function(ODDpixels, valDF, Omega, center, BD_param
   
 })
 
-ODDpixels <- readRDS(paste0(dir,"IIDIPUS_Input/ODDobjects_v4/TC20200404VUT_2208_agg_4"))
-Omega <- list(Lambda1 = list(nu=0.2,omega=0.7),
-              Lambda2 = list(nu= 1.3, omega=0.9),
-              Lambda3 = list(nu=1.5,omega=3),
-              theta = list(e=0.4),
-              eps = list(eps=0.95))
-ODDpixels %<>% DispX_new(valDF = valDF, Omega = Omega, center = Model$center, LL=F, Method = AlgoParams)
-ODDpixels@predictDisp
+#
+### Uncomment to run an example below
+#
+
+#ODDpixels <- readRDS(paste0(dir,"IIDIPUS_Input/ODDobjects_v4/TC20200404VUT_2208_agg_4"))
+#Omega <- list(Lambda1 = list(nu=0.2,omega=0.7),
+#              Lambda2 = list(nu= 1.3, omega=0.9),
+#              Lambda3 = list(nu=1.5,omega=3),
+#              theta = list(e=0.4),
+#              eps = list(eps=0.95))
+#ODDpixels %<>% DispX_new(valDF = valDF, Omega = Omega, center = Model$center, LL=F, Method = AlgoParams)
+#ODDpixels@predictDisp
