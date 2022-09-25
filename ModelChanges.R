@@ -5,8 +5,10 @@
 dir<-directory<-"C:/Users/james/OneDrive/Documents/Oxford/Dissertation/Code/ODDRIN/"
 setwd(directory)
 
-source('RCode/DispX_new (1).R')
-source('RCode/BDXNEW (1).R')
+source('RCode/Model.R')
+source('RCode/Functions.R')
+source('RCode/DispXNew.R')
+source('RCode/BDXNew.R')
 
 AlgoParams<-list(Np = 20, # Number of Monte Carlo particles
                  cores = 1, # Number of parallelised threads per event
