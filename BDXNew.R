@@ -8,6 +8,9 @@ library(purrr)
 library(tidyverse)
 library(magrittr)
 
+dir<-directory<-"C:/Users/james/OneDrive/Documents/Oxford/Dissertation/Code/ODDRIN/"
+setwd(directory)
+
 ExtractCentering<-function(dir, haz="TC",saver=T, input_folder='IIDIPUS_Input/'){
   
   if(saver & file.exists(paste0(dir, input_folder, "centerings"))) 
@@ -35,7 +38,7 @@ ExtractCentering<-function(dir, haz="TC",saver=T, input_folder='IIDIPUS_Input/')
 }
 
 source('RCode/Functions.R')
-source('RCode/Model (1).R')
+source('RCode/Model.R')
 
 Omega <- list(Lambda1 = list(nu=0.2,omega=0.7),
               Lambda2 = list(nu= 1.3, omega=0.9),
