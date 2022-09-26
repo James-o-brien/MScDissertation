@@ -60,7 +60,7 @@ Similar to the above, running this CLIMADA file will require the installation of
 The Cyclone Harold data can be found in tc_harold_val_data_v6.csv. Some of the main objects have been provided on this repository (excluding those which were too large in size), as well as the old OpenStreetMap data. Other relevant data can be found on the ODDRIN repository, as well as through citations in Section 2.2 of the dissertation.
 
 ## Comments
-Some of the code and functions can take several days or even weeks to run, depending on parameter choices. When this is the case, we have tried to explicitly warn the user and comment out very intense computations. The full ODDpolys and BD objects which are used in calculations are provided, to save the user time in initialising these. The ODDpixels object was too large to store here. I am happy to email this object as an RDS file upon request; my email address is james-obrien1@outlook.com.
+Some of the code and functions can take several days or even weeks to run, depending on parameter choices. When this is the case, we have tried to explicitly warn the user and comment out very intense computations. The full ODDpolys and BD objects which are used in calculations are provided, to save the user time in initialising these. The ODDpixels object was too large to store here. For data requests or queries, please email james-obrien1@outlook.com.
 
 [can be found here.]: https://github.com/hamishwp/ODDRIN
 
