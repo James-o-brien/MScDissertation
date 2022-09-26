@@ -7,6 +7,7 @@ library(EnvStats)
 library(purrr)
 library(tidyverse)
 library(magrittr)
+library(caret)
 
 dir<-directory<-"C:/Users/james/OneDrive/Documents/Oxford/Dissertation/Code/ODDRIN/"
 setwd(directory)
@@ -162,3 +163,28 @@ setMethod("BDX_new", "BD", function(BD,Omega,Model,Method=list(Np=20,cores=1),LL
 #BD <- readRDS(paste0(dir, "IIDIPUS_Input/BDobjects_v5/TC20200404VUT_BD"))
 #BDX_results <- BDX_new(BD, Omega, Model, Method = AlgoParams, LL = F)
 #tab <- table(BDX_results@data$grading, BDX_results@data$ClassPredicted)
+
+#
+### 5-fold cross-validation
+#
+
+# Defining training control as cross-validation and value of K=5
+train_control <- trainControl(method = "cv",
+                              number = 5)
+
+# Gathering the data
+notnans <- which(!(is.na(BD@data$Population) | is.na(BD@data$grading)))
+df <- data.frame(grading = BD@data[notnans,]$grading,
+                 population = BD@data[notnans,]$Population,
+                 UnscaledVals = UnscaledVals)
+
+# Training the model
+model <- train(grading ~., data = df,
+               method = "multinom",
+               trControl = train_control)
+
+# Printing the model performance metrics
+print(model)
+summary(model$finalModel)
+model$resample
+confusionMatrix(model)
