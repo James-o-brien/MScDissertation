@@ -51,9 +51,13 @@ Much the same as above; this file is included for completeness and contains only
 
 ## CLIMADA Python Files
 
+![plot](./IntensityMap.png)
+
 Similar to the above, running this CLIMADA file will require the installation of both Python and CLIMADA's software, instructions for which [are available here.]
 
-![plot](./IntensityMap.png)
+##### HaroldCLIMADA.py
+
+This file contains the code which is used for much of the visualisations that are cited as using CLIMADA's functionality throughout the dissertation. The code also steps through exposure and impact calculations using CLIMADA's model for Cyclone Harold. Note that CLIMADA uses an economic cost approach for these calculations.
 
 ## Data
 
