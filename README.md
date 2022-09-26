@@ -4,7 +4,7 @@ This is a repository which contains some of the main files written during my MSc
 ## ODDRIN R Files
 Please note that some of the code presented here depends on the installation of ODDRIN, the downloading and storing of relevant data, and some packages and functions in the ODDRIN files. These functions are mostly not included in the files given here unless absolutely necessary, with the aim of distinguishing between code written during this dissertation and that which was already created. The ODDRIN repository, which contains installation instructions and some files which are referenced below, [can be found here.]
 
-Roughly speaking, the first four files below (ODDpolys, Data_viz, Init, and OldOSM) are new, while the last two files (DispX_new and Model_changes) are new versions of previously created files which have been developed during this dissertation. Some of the new files contain functions which build off previous versions of functions, and we do our best to note whenever this is the case below. 
+Roughly speaking, the first three files below (ODDpolys, DataViz, and DataPrep) are new, the following two files (DispXNew and BDXNew) are new versions of previously created files which have been developed during this dissertation, and the last two files (ModelChanges and RunAlgo) contain only minor edits to previously created functions and files and are included here for completeness. Some of the new files contain functions which build off previous versions of functions, and we do our best to note whenever this is the case below. 
 
 ![plot](./Sanma.jpeg)
 
@@ -20,6 +20,14 @@ Key Functions:
 - `ExtractOSMBuild` - function which was already built in ODDRIN which allows extraction of OSM buildings for a given bbox. Warning: this function may take several minutes to run, depending on the size of the bbox.
 - `ParAggnBuildings` - function which was already built in ODDRIN which allows the aggregation of points to pixels. Warning: this function will take minutes or hours depending on the size of the bbox.
 
+##### DataViz.R
+
+This file contains much of the code that was used to produce the plots throughout the dissertation. 
+
+##### DataPrep.R
+
+This file contains the inference of unaffected buildings discussed in Section 4.2.1 of the dissertation, along with the interpolation of population and hazard intensity values. Note that downloading old OpenStreetMap from before Cyclone Harold is required; this data can be found above and is entitled 'hotosm_vut_buildings.gpkg'.
+
 ##### DispXNew.R
 
 Key Functions:
@@ -32,14 +40,6 @@ Key Functions:
 - `BDX_new` - a new version of BDX - a function which was already built in ODDRIN which classifies the buildings in the Copernicus data according to different building damage gradings. This version of BDX uses the MLR method described in Section 4.2.3 in the dissertation. 
 
 We also include an example at the end of this file which shows how we conducted the 5-fold cross-validation. This example requires using BDX_new to obtain the UnscaledVals for the given Omega parameterisation first, before being able to run the 5-fold cross-validation.
-
-##### DataViz.R
-
-This file contains much of the code that was used to produce the plots throughout the dissertation. 
-
-##### DataPrep.R
-
-This file contains the inference of unaffected buildings discussed in Section 4.2.1 of the dissertation, along with the interpolation of population and hazard intensity values. Note that downloading old OpenStreetMap from before Cyclone Harold is required; this data can be found above and is entitled 'hotosm_vut_buildings.gpkg'.
 
 ##### ModelChanges.R
 
