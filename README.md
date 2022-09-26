@@ -33,14 +33,6 @@ Key Functions:
 
 We also include an example at the end of this file which shows how we conducted the 5-fold cross-validation. This example requires using BDX_new to obtain the UnscaledVals for the given Omega parameterisation first, before being able to run the 5-fold cross-validation.
 
-##### ModelChanges.R
-
-This file is included for completeness and only contains minor changes from functions already present in ODDRIN. It is important to include as it shows the calculation of the objective function (i.e. the distance for the ABC-SMC algorithm).
-
-##### RunAlgo.R
-
-Much the same as above; this file is included for completeness and contains only minor modifications to some functions which were already present in ODDRIN. Running only this file as well as those above allows the running of the ABC-SMC algorithm.
-
 ##### DataViz.R
 
 This file contains much of the code that was used to produce the plots throughout the dissertation. 
@@ -48,6 +40,14 @@ This file contains much of the code that was used to produce the plots throughou
 ##### DataPrep.R
 
 This file contains the inference of unaffected buildings discussed in Section 4.2.1 of the dissertation, along with the interpolation of population and hazard intensity values. Note that downloading old OpenStreetMap from before Cyclone Harold is required; this data can be found above and is entitled 'hotosm_vut_buildings.gpkg'.
+
+##### ModelChanges.R
+
+This file is included for completeness and only contains minor changes from functions already present in ODDRIN. It is important to include as it shows the calculation of the objective function (i.e. the distance for the ABC-SMC algorithm).
+
+##### RunAlgo.R
+
+Much the same as above; this file is included for completeness and contains only minor modifications to some functions which were already present in ODDRIN. Running only this file as well as those above allows the running of the ABC-SMC algorithm.
 
 ## CLIMADA Python Files
 
