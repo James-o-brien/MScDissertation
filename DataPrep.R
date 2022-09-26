@@ -16,8 +16,8 @@ library(sf)
 library(magrittr)
 library(akima)
 library(stringr)
-source('RCode/DispX_new (1).R')
-source('RCode/BDXNEW (1).R')
+source('RCode/DispXNew.R')
+source('RCode/BDXNew.R')
 
 BD <- readRDS(paste0(dir, "IIDIPUS_Input/BDobjects_v3/BD_TC20200404VUT_7325"))
 
