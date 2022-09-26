@@ -5,10 +5,8 @@
 #%matplotlib inline
 import numpy as np
 from climada.hazard import Centroids, TropCyclone, TCTracks
-import numpy as np
-from climada.entity import LitPop
+from climada.entity import LitPop, ImpactFuncSet, ImpfTropCyclone
 from climada.engine import Impact
-from climada.entity import ImpactFuncSet, ImpfTropCyclone
 
 # Import the tracks
 tr_harold = TCTracks.from_ibtracs_netcdf(provider='usa', storm_id='2020092S09155')
@@ -46,7 +44,7 @@ ax = tc_harold.plot_intensity('2020092S09155');  # Harold
 ax.set_title('Cyclone Harold Intensity Map', fontsize = 20, pad = 20)
 
 #
-### Video of Cyclone Harold - uncomment to run
+### Video of Cyclone Harold
 #
 
 # WARNING: executing the below will fail unless there is enough memory available (> 10G)
@@ -115,4 +113,3 @@ imp.plot_hexbin_eai_exposure(buffer=1);
 imp.plot_raster_eai_exposure()
 imp.plot_rp_imp(buffer = 200)
 imp.plot_scatter_eai_exposure()
-
