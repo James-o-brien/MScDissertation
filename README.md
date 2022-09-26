@@ -20,15 +20,34 @@ Key Functions:
 - `ExtractOSMBuild` - function which was already built in ODDRIN which allows extraction of OSM buildings for a given bbox. Warning: this function may take several minutes to run, depending on the size of the bbox.
 - `ParAggnBuildings` - function which was already built in ODDRIN which allows the aggregation of points to pixels. Warning: this function will take minutes or hours depending on the size of the bbox.
 
-##### Data_viz.R
+##### DispXNew.R
 
-##### OldOSM.R
+Key Functions:
+- `DispX_new` - a new version of DispX - a function which was already built in ODDRIN which predicts the number of people displaced, deceased, and buildings destroyed conditional on the hazard, model, and parameterisation. The main changes for this new version are the aggregation of predictions at a polygonal level (this aggregation depends on the ODDpolys.R file and data) and the extension to predict the quantity of buildings damaged and unaffected.
+- `LL_IDP_new` - function which presents the output of the kernel density function, which was already built in ODDRIN, but has been extended slightly to work with polygons and with buildings damaged.
 
-##### DispX_new.R
+##### BDXNew.R
 
-##### Run_algo.R
+Key Functions:
+- `BDX_new` - a new version of BDX - a function which was already built in ODDRIN which classifies the buildings in the Copernicus data according to different building damage gradings. This version of BDX uses the MLR method described in Section 4.2.3 in the dissertation. 
 
-##### Model_changes.R
+We also include an example at the end of this file which shows how we conducted the 5-fold cross-validation. This example requires using BDX_new to obtain the UnscaledVals for the given Omega parameterisation first, before being able to run the 5-fold cross-validation.
+
+##### ModelChanges.R
+
+This file is included for completeness and only contains minor changes from functions already present in ODDRIN. It is important to include as it shows the calculation of the objective function (i.e. the distance for the ABC-SMC algorithm).
+
+##### RunAlgo.R
+
+Much the same as above; this file is included for completeness and contains only minor modifications to some functions which were already present in ODDRIN. Running only this file as well as those above allows the running of the ABC-SMC algorithm.
+
+##### DataViz.R
+
+This file contains much of the code that was used to produce the plots throughout the dissertation. 
+
+##### DataPrep.R
+
+This file contains the inference of unaffected buildings discussed in Section 4.2.1 of the dissertation, along with the interpolation of population and hazard intensity values. Note that downloading old OpenStreetMap from before Cyclone Harold is required; this data can be found above and is entitled 'hotosm_vut_buildings.gpkg'.
 
 ## CLIMADA Python Files
 
