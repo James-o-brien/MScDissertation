@@ -41,7 +41,7 @@ ExtractCentering<-function(dir, haz="TC",saver=T, input_folder='IIDIPUS_Input/')
   return(center)
 }
 
-source('RCode/Model (1).R')
+source('RCode/Model.R')
 source('RCode/Functions.R')
 
 setClass("ODD", 
