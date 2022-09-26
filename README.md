@@ -1,5 +1,5 @@
 # MSc Dissertation
-This is a repository which contains some of the main files written during my MSc Dissertation, 'Benchmarking predictions of post-disaster human displacement'.
+This repository contains some of the main files written during my MSc Dissertation, 'Benchmarking predictions of post-disaster human displacement'.
 
 ## ODDRIN R Files
 Please note that some of the code presented here depends on the installation of ODDRIN, the downloading and storing of relevant data, and some packages and functions in the ODDRIN files. These functions are mostly not included in the files given here unless absolutely necessary, with the aim of distinguishing between code written during this dissertation and that which was already created. The ODDRIN repository, which contains installation instructions and some files which are referenced below, [can be found here.]
